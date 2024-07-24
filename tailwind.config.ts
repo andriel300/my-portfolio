@@ -21,7 +21,17 @@ const config = {
       lg: "960px",
       xl: "1200px",
     },
+    fontFamily: {
+      primary: "var(--font-jetbrainsMono)",
+    },
     extend: {
+      colors: {
+        primary: "#16161a",
+        accent: {
+          DEFAULT: "#7f5af0",
+          hover: "#8B6AF1",
+        },
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
