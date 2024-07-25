@@ -31,6 +31,7 @@ const config = {
           DEFAULT: "#7f5af0",
           hover: "#8B6AF1",
         },
+        accent2: "#2CAF86",
       },
       keyframes: {
         "accordion-down": {
