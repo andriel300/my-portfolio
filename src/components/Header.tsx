@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import Nav from "./Nav";
+import MobileNav from "./MobileNav";
 
 type Props = {};
 
@@ -12,7 +13,7 @@ const Header = (props: Props) => {
 
         <Link href="/">
           <h1 className="text-4xl font-semibold">
-            ANDRIEL <span className="text-accent">.</span>
+            ANDRIEL<span className="text-accent">.</span>
           </h1>
         </Link>
 
@@ -25,7 +26,9 @@ const Header = (props: Props) => {
         </div>
 
         {/* mobile nav */}
-        <div className="xl:hidden">mobile nav</div>
+        <div className="xl:hidden">
+          <MobileNav />
+        </div>
       </div>
     </header>
   );
