@@ -1,7 +1,9 @@
 "use client";
 
 import AnimatedText from "@/components/AnimatedText";
+import Photo from "@/components/Photo";
 import RedeSocial from "@/components/RedeSocial";
+import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { FiDownload } from "react-icons/fi";
@@ -16,7 +18,7 @@ const Home = () => {
         xl:pt-8 xl:pb-24"
         >
           {/* text */}
-          <div className="text-center xl:text-left">
+          <div className="text-center xl:text-left order-2 xl:order-none">
             <TypeAnimation
               sequence={[
                 "Eu sou Analista de Dados",
@@ -37,7 +39,7 @@ const Home = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 10 }}
-                className=" text-primary bg-accent before:absolute rounded-s-full py-0.5 p-1"
+                className=" text-primary bg-accent rounded-s-full py-0.5 p-1"
               >
                 JOSÉ
               </motion.span>
@@ -68,9 +70,13 @@ const Home = () => {
             </div>
           </div>
           {/* photo */}
-          <div>photo</div>
+          <div className="order-1 xl:order-none mb-8 xl:mb-0">
+            <Photo />
+          </div>
         </div>
       </div>
+
+      <Stats />
     </section>
   );
 };

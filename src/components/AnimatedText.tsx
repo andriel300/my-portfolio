@@ -40,7 +40,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
   className = "",
 }) => {
   return (
-    <div className="w-5/6 mx-auto flex justify-center text-center items-center overflow-hidden md:text-start">
+    <div>
       <motion.p
         className={`inline-block text-lg ${className}`}
         variants={quote}

@@ -18,7 +18,7 @@ const PageTransition = ({ children }: Props) => {
             opacity: 0,
             transition: { delay: 1, duration: 0.4, ease: "easeInOut" },
           }}
-          className="h-screen w-screen fixed bg-primary top-0 pointer-events-none"
+          className="h-screen w-screen fixed bg-accent top-0 pointer-events-none"
         />
         {children}
       </div>
