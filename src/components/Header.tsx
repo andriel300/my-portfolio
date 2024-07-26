@@ -21,7 +21,7 @@ const Header = (props: Props) => {
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
           <Link href="/contato">
-            <Button>Hire me</Button>
+            <Button>ME CONTRATA!</Button>
           </Link>
         </div>
 

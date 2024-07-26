@@ -30,6 +30,7 @@ const Photo = (props: Props) => {
             priority
             quality={100}
             fill
+            sizes="(max-width: 600px) 298px, (max-width: 1200px) 498px, 498px"
             alt=""
             className="object-contain"
           />
@@ -44,9 +45,6 @@ const Photo = (props: Props) => {
           xmlns="http://www.w3.org/2008/svg"
         >
           <motion.path
-            // cx="253"
-            // cy="253"
-            // r="250"
             d="M 3 3 H 498 V 498 H 3 Z"
             stroke="#8B6AF1"
             strokeWidth="4"

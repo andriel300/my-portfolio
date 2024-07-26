@@ -8,8 +8,8 @@ const quote: Record<string, any> = {
   },
   animate: {
     opacity: 1,
+    delay: 2.4,
     transition: {
-      delay: 2,
       staggerChildren: 0.08,
     },
   },
