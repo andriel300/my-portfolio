@@ -44,7 +44,7 @@ I am a professional passionate about using data to solve problems and make smart
 
    ```bash
    git clone https://github.com/andriel300/my-portfolio
-   cd portfolio
+   cd my-portfolio
    ```
 
 2. Install dependencies:
@@ -75,4 +75,4 @@ Feel free to reach out if you have any questions or collaboration ideas:
 
 - **Email:** andrieldata@proton.me
 - **LinkedIn:** [Andriel José](https://linkedin.com/in/andrieljose)
-- **GitHub:** [yourusername](https://github.com/andriel300)
+- **GitHub:** [andriel300](https://github.com/andriel300)
