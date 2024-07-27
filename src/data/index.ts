@@ -148,7 +148,7 @@ export const Projetos = [
       { name: "Tailwind.css" },
     ],
     image: "/assets/work/projeto-frontend.png",
-    live: "https://my-portfolio-sigma-hazel-71.vercel.app/",
+    live: "https://andrielportfolio.vercel.app/",
     github: "https://github.com/andriel300/my-portfolio",
   },
   {
