@@ -1,10 +1,10 @@
-# Andriel José's Portfolio
+# Andriel José Portfolio
 
 Welcome to my portfolio project! This project showcases my skills, experience, and projects in web development and data analysis. Below you'll find a detailed overview of the project, its structure, and instructions on how to set it up locally.
 
 ## Table of Contents
 
-- [Andriel José's Portfolio](#andriel-josés-portfolio)
+- [Andriel José Portfolio](#andriel-josé-portfolio)
   - [Table of Contents](#table-of-contents)
   - [About Me](#about-me)
   - [Features](#features)
@@ -16,7 +16,7 @@ Welcome to my portfolio project! This project showcases my skills, experience, a
 
 ## About Me
 
-I am a professional passionate about using data to solve problems and make smarter decisions, always looking to turn challenges into opportunities. I believe that data analysis is a powerful tool for generating value in any organization, and this belief guides my daily work. As an INFP Mediator and Cancerian, I bring empathy and intuition to each project, allowing me to deeply understand the needs of my colleagues and stakeholders. I am driven by meaningful values and goals, which is reflected in my dedication to excellence and continuous improvement.
+I am a professional passionate about using data to solve problems and make smarter decisions, always looking to turn challenges into opportunities. I believe that data analysis is a powerful tool for generating value in any organization, and this belief guides my daily work. I bring empathy and intuition to each project, allowing me to deeply understand the needs of my colleagues and stakeholders. I am driven by meaningful values and goals, which is reflected in my dedication to excellence and continuous improvement.
 
 ## Features
 
@@ -33,9 +33,9 @@ I am a professional passionate about using data to solve problems and make smart
 - **React.js:** JavaScript library for building user interfaces.
 - **Tailwind CSS:** Utility-first CSS framework.
 - **Framer Motion:** Library for animations.
+- **React Three Fiber:** Library for 3d animations.
 - **React Icons:** Collection of popular icons.
 - **TypeScript:** Typed superset of JavaScript.
-- **Radix UI:** Unstyled, accessible components for building high-quality design systems and web apps.
 - **React Hook Form:** Performant, flexible, and extensible forms with easy-to-use validation.
 
 ## Installation
