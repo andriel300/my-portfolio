@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Andriel José's Portfolio
 
-## Getting Started
+Welcome to my portfolio project! This project showcases my skills, experience, and projects in web development and data analysis. Below you'll find a detailed overview of the project, its structure, and instructions on how to set it up locally.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Andriel José's Portfolio](#andriel-josés-portfolio)
+  - [Table of Contents](#table-of-contents)
+  - [About Me](#about-me)
+  - [Features](#features)
+  - [Technologies Used](#technologies-used)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contact](#contact)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## About Me
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+I am a professional passionate about using data to solve problems and make smarter decisions, always looking to turn challenges into opportunities. I believe that data analysis is a powerful tool for generating value in any organization, and this belief guides my daily work. As an INFP Mediator and Cancerian, I bring empathy and intuition to each project, allowing me to deeply understand the needs of my colleagues and stakeholders. I am driven by meaningful values and goals, which is reflected in my dedication to excellence and continuous improvement.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Features
 
-## Learn More
+- **Personal Information:** A brief introduction about myself, my experience, and skills.
+- **Experience Section:** Detailed information about my professional background.
+- **Education Section:** My educational background and certifications.
+- **Skills Section:** A showcase of my technical skills and proficiencies.
+- **Projects Section:** Highlighting various projects I have worked on, with descriptions and links.
+- **Contact Section:** How to get in touch with me.
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Next.js:** Framework for server-side rendering and generating static websites.
+- **React.js:** JavaScript library for building user interfaces.
+- **Tailwind CSS:** Utility-first CSS framework.
+- **Framer Motion:** Library for animations.
+- **React Icons:** Collection of popular icons.
+- **TypeScript:** Typed superset of JavaScript.
+- **Radix UI:** Unstyled, accessible components for building high-quality design systems and web apps.
+- **React Hook Form:** Performant, flexible, and extensible forms with easy-to-use validation.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Installation
 
-## Deploy on Vercel
+1. Clone the repository:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   git clone https://github.com/andriel300/my-portfolio
+   cd portfolio
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:3000`.
+
+## Usage
+
+This portfolio is designed to provide a comprehensive overview of my skills and experience. Navigate through the different sections using the navigation menu. Each section provides detailed information about various aspects of my professional life, from experience and education to skills and projects.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contact
+
+Feel free to reach out if you have any questions or collaboration ideas:
+
+- **Email:** andrieldata@proton.me
+- **LinkedIn:** [Andriel José](https://linkedin.com/in/andrieljose)
+- **GitHub:** [yourusername](https://github.com/andriel300)
