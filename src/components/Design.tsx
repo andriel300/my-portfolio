@@ -13,15 +13,13 @@ const stairAnimation = {
   },
 };
 
-type Props = {};
-
 //  calcular o reverso do indice delay
 const reverseIndex = (index: number) => {
   const totalSteps = 6;
   return totalSteps - index - 1;
 };
 
-const Design = (props: Props) => {
+const Design = () => {
   return (
     <>
       {/* renderizar 6 motion divs. */}

@@ -6,16 +6,6 @@ import { Textarea } from "@/components/ui/textarea";
 
 import { useForm, SubmitHandler } from "react-hook-form";
 
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 
@@ -47,14 +37,10 @@ interface FormData {
   service: string;
 }
 
-type Props = {};
-
-const Contato: React.FC<Props> = (props) => {
+const Contato = () => {
   const {
     register,
     handleSubmit,
-    trigger,
-    setValue,
     formState: { errors, isSubmitting, isDirty },
   } = useForm<FormData>();
 
@@ -113,7 +99,7 @@ const Contato: React.FC<Props> = (props) => {
                   })}
                 />
                 {errors.name && (
-                  <p className="text-red mt-1">
+                  <p className="text-red-600 mt-1">
                     {errors.name.type === "required" &&
                       "Este campo é necessário."}
                     {errors.name.type === "maxLength" &&
@@ -129,7 +115,7 @@ const Contato: React.FC<Props> = (props) => {
                   })}
                 />
                 {errors.email && (
-                  <p className="text-red mt-1">
+                  <p className="text-red-600 mt-1">
                     {errors.email.type === "required" &&
                       "Este campo é necessário."}
                     {errors.email.type === "pattern" && "Email Inválido."}
@@ -146,24 +132,8 @@ const Contato: React.FC<Props> = (props) => {
                   {...register("tel")}
                 />
               </div>
-              {/* select */}
-              {/* <Select>
-                <SelectTrigger className="w-full">
-                  <SelectValue
-                    placeholder="Seleciona o Serviço"
-                    {...register("service")}
-                  />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectGroup>
-                    <SelectLabel> Seleciona o Serviço </SelectLabel>
-                    <SelectItem value="est">Análise de Dados</SelectItem>
-                    <SelectItem value="mst">Ciência de Dados</SelectItem>
-                    <SelectItem value="cst">Desenvolvimento Web</SelectItem>
-                  </SelectGroup>
-                </SelectContent>
-              </Select> */}
-              {/* textarea */}
+
+              {/* MESSAGE */}
               <Textarea
                 className="h-[200px]"
                 placeholder="Escreva sua mensagem aqui"
@@ -176,7 +146,7 @@ const Contato: React.FC<Props> = (props) => {
                 })}
               />
               {errors.message && (
-                <p className="text-red mt-1">{errors.message.message}</p>
+                <p className="text-red-600 mt-1">{errors.message.message}</p>
               )}
               {/* Button */}
               <Button

@@ -26,9 +26,7 @@ const links = [
   },
 ];
 
-type Props = {};
-
-const Nav = (props: Props) => {
+const Nav = () => {
   const pathname = usePathname();
 
   return (

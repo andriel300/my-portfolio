@@ -2,11 +2,13 @@
 
 import { motion } from "framer-motion";
 import React, { useState } from "react";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
+import { Projetos } from "@/data";
+import Link from "next/link";
+import Image from "next/image";
+import WorkSliderBtns from "@/components/WorkSliderBtns";
 
 import {
   Tooltip,
@@ -15,100 +17,14 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
-import Link from "next/link";
-import Image from "next/image";
-import WorkSliderBtns from "@/components/WorkSliderBtns";
-
-const projetos = [
-  {
-    num: "01",
-    category: "dashboard",
-    title: "projeto 1",
-    description: `People Analytics Setor de RH`,
-    stack: [{ name: "Excel" }, { name: "Power Bi" }, { name: "Figma" }],
-    image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
-  },
-  {
-    num: "02",
-    category: "dashboard",
-    title: "projeto 2",
-    description: `Acompanhamento de Vendas para Setor Financeiro`,
-    stack: [{ name: "Excel" }, { name: "Power Bi" }, { name: "Figma" }],
-    image: "/assets/work/thumb3.png",
-    live: "",
-    github: "",
-  },
-  {
-    num: "03",
-    category: "frontend",
-    title: "projeto 3",
-    description: `Portfolio Pessoal`,
-    stack: [
-      { name: "Next.js" },
-      { name: "Javascript" },
-      { name: "Typescript" },
-      { name: "Html 5" },
-      { name: "Css 3" },
-      { name: "Tailwind.css" },
-    ],
-    image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
-  },
-  {
-    num: "04",
-    category: "dashboard",
-    title: "projeto 4",
-    description: `Acompanhamento Financeiro para Setor Financeiro`,
-    stack: [{ name: "Excel" }, { name: "Power Bi" }, { name: "Figma" }],
-    image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
-  },
-  {
-    num: "05",
-    category: "dashboard",
-    title: "projeto 5",
-    description: `Acompanhamento de Vendas para Setor Comercial`,
-    stack: [{ name: "Excel" }, { name: "Power Bi" }, { name: "Figma" }],
-    image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
-  },
-  {
-    num: "06",
-    category: "dashboard",
-    title: "projeto 6",
-    description: `Acompanhamento de Atendimentos para Setor Atendimento ao Cliente`,
-    stack: [{ name: "Excel" }, { name: "Power Bi" }, { name: "Figma" }],
-    image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
-  },
-  {
-    num: "07",
-    category: "dashboard",
-    title: "projeto 7",
-    description: `Pesquisa de Satisfação dos Colaboradores para Setor RH`,
-    stack: [{ name: "Excel" }, { name: "Power Bi" }, { name: "Figma" }],
-    image: "/assets/work/thumb3.png",
-    live: "",
-    github: "",
-  },
-];
-
-type Props = {};
-
-const Trabalho = (props: Props) => {
-  const [projeto, setProjeto] = useState(projetos[0]);
+const Trabalho = () => {
+  const [projeto, setProjeto] = useState(Projetos[0]);
 
   const handleSlideChange = (swiper: { activeIndex: any }) => {
     // get current slide index
     const currentIndex = swiper.activeIndex;
     // update project state based on current slide index
-    setProjeto(projetos[currentIndex]);
+    setProjeto(Projetos[currentIndex]);
   };
 
   return (
@@ -187,7 +103,7 @@ const Trabalho = (props: Props) => {
               className="xl:h-[520px] mb-12"
               onSlideChange={handleSlideChange}
             >
-              {projetos.map((projeto, index) => (
+              {Projetos.map((projeto, index) => (
                 <SwiperSlide key={index} className="w-full">
                   <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
                     {/* overlay, sobreposição */}
@@ -199,7 +115,6 @@ const Trabalho = (props: Props) => {
                         fill
                         className="object-cover"
                         alt=""
-                        sizes="(max-width: 600px) 298px, (max-width: 1200px) 498px, 498px"
                       />
                     </div>
                   </div>

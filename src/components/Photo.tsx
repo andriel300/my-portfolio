@@ -3,9 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-type Props = {};
-
-const Photo = (props: Props) => {
+const Photo = () => {
   return (
     <div className="w-full h-full relative">
       <motion.div

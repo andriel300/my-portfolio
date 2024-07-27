@@ -4,9 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import Design from "./Design";
 
-type Props = {};
-
-const DesignTransition = (props: Props) => {
+const DesignTransition = () => {
   const pathname = usePathname();
   return (
     <>

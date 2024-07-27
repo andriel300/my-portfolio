@@ -1,12 +1,11 @@
 "use client";
 
 import AnimatedText from "@/components/AnimatedText";
+import DownLoadCVBtn from "@/components/DownLoadCVBtn";
 import Photo from "@/components/Photo";
 import RedeSocial from "@/components/RedeSocial";
 import Stats from "@/components/Stats";
-import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { FiDownload } from "react-icons/fi";
 import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
@@ -48,18 +47,10 @@ const Home = () => {
               className="max-w-[500px] mb-9 text-white/80"
               text="Sou um analista de dados motivado, com sólidas habilidades de resolução de problemas e uma atitude positiva que me capacita a abordar desafios com uma mentalidade analítica e proativa."
             />
+
             {/* botôes e sociais */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <a href="/assets/resume.pdf" download="resume.pdf">
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="uppercase flex items-center gap-2"
-                >
-                  <span>Download CV</span>
-                  <FiDownload className="text-xl" />
-                </Button>
-              </a>
+              <DownLoadCVBtn />
               <div className="mb-8 xl:mb-0">
                 <RedeSocial
                   containerStyles="flex gap-6"
