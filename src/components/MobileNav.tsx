@@ -11,7 +11,7 @@ const links = [
     path: "/",
   },
   {
-    name: "serviço",
+    name: "objetivos",
     path: "/services",
   },
   {
@@ -28,9 +28,7 @@ const links = [
   },
 ];
 
-type Props = {};
-
-const MobileNav = (props: Props) => {
+const MobileNav = () => {
   const pathname = usePathname();
 
   return (
