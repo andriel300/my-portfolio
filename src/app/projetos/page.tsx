@@ -16,6 +16,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import FramerWrapper from "@/components/FramerWrapper";
 
 const Trabalho = () => {
   const [projeto, setProjeto] = useState(Projetos[0]);
@@ -41,15 +42,20 @@ const Trabalho = () => {
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px] h-[50%]">
               {/* outline num */}
-              <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
+              <FramerWrapper
+                key={projeto.num}
+                className="text-8xl leading-none font-extrabold text-transparent text-outline"
+              >
                 {projeto.num}
-              </div>
+              </FramerWrapper>
               {/* categoria de projetos */}
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {projeto.category} projeto
-              </h2>
-              {/* projeto descrição */}
-              <p className="text-white/60">{projeto.description}</p>
+              <FramerWrapper key={projeto.category}>
+                <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
+                  {projeto.category} projeto
+                </h2>
+                {/* projeto descrição */}
+                <p className="text-white/60">{projeto.description}</p>
+              </FramerWrapper>
               {/* stack */}
               <ul>
                 {projeto.stack.map((item, index) => {
@@ -95,6 +101,7 @@ const Trabalho = () => {
               </div>
             </div>
           </div>
+
           {/* SLIDER DAS FOTOS */}
           <div className="w-full xl:w-[50%] relative">
             <Swiper

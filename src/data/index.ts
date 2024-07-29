@@ -8,11 +8,11 @@ export const StatsExperience = [
     text: "Projetos completo",
   },
   {
-    num: 8,
+    num: 20,
     text: "Tecnologias masterizadas",
   },
   {
-    num: 600,
+    num: 599,
     text: "Total Contribuições (Code commits)",
   },
 ];
