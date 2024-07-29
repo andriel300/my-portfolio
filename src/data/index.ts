@@ -243,10 +243,9 @@ export const Sobre = {
 export const Experiencia = {
   icon: "/assets/resume/badge.svg",
   title: "Minha Experiência",
-  description: `Devido à minha sólida carreira na análise de dados, tenho vasta experiência na identificação e solução de problemas complexos trabalhando em parceria com as áreas de negócios. Trabalhei com a priorização de tarefas apoiada por metodologias ágeis, como Scrum, bem como criei protótipos altamente eficientes com programas como Figma e Excel. Sou profissional no mapeamento de dados e no processo de ETL; executei essas tarefas com Pentaho, SSIS e SQL, e garanti a integração e transformação exatas de formulários de informações. No desenvolvimento de dashboards interativos e informativos, trabalho de forma especializada usando Power BI, Tableau e Data Studio.
+  description: `Com sólida carreira em análise de dados, tenho vasta experiência em identificar e solucionar problemas complexos em parceria com áreas de negócios. Priorizei tarefas utilizando metodologias ágeis como Scrum e criei protótipos eficientes com Figma e Excel. Profissional no mapeamento de dados e processos ETL usando Pentaho, SSIS e SQL, garantindo a integração e transformação precisas dos dados. Especialista em desenvolver dashboards interativos com Power BI, Tableau e Data Studio.
 
-Através da minha especialização no desenvolvimento e controle de KPIs e OKRs, assegurando a medição eficaz dos objetivos organizacionais. Minha experiência inclui também a homologação de sistemas, documentação detalhada e a elaboração de manuais de usabilidade de dashboards, contribuindo para a conformidade com a LGPD e a implementação de estratégias de gamificação para engajamento.
- Com uma mentalidade analítica e entendimento da comunicação eficaz, resolvo todos os desafios proativamente, sempre procurando excelência e inovação.`,
+Tenho experiência no desenvolvimento e controle de KPIs e OKRs, assegurando a medição eficaz dos objetivos organizacionais. Realizei homologação de sistemas, documentação detalhada e elaboração de manuais de usabilidade, contribuindo para a conformidade com LGPD e implementação de estratégias de gamificação para engajamento. Com mentalidade analítica e comunicação eficaz, busco excelência e inovação em todos os desafios.`,
   items: [
     {
       company: "Data Mundo",
@@ -260,9 +259,9 @@ Através da minha especialização no desenvolvimento e controle de KPIs e OKRs,
 export const Education = {
   icon: "/assets/resume/cap.svg",
   title: "Formação",
-  description: `Atualmente cursando Bacharelado em Ciências da Computação pelo Centro Universitário Internacional (UNINTER) (2024 - 2028), adquiri uma base sólida em conceitos teóricos e práticos da computação. Desde 2023, atuo como Analista de Dados na Data Mundo, onde aplico meus conhecimentos em análise de dados e ferramentas tecnológicas para resolver problemas de negócios.
+  description: `Atualmente cursando Bacharelado em Ciências da Computação pelo Centro Universitário Internacional (UNINTER) (2024 - 2028), desenvolvi uma sólida compreensão dos fundamentos da computação, tanto teóricos quanto práticos. Desde 2023, trabalho como Analista de Dados na Data Mundo, onde utilizo minhas habilidades em análise de dados e ferramentas tecnológicas para solucionar desafios empresariais.
 
-Em 2022, obtive o Certificado em Desenvolvimento Web Full Stack pela Zero To Mastery, expandindo minhas habilidades em desenvolvimento web e programação. Entre 2020 e 2023, participei de diversos cursos online focados em programação, bancos de dados, SQL, Excel e Power BI, fortalecendo minhas competências técnicas e minha capacidade de análise e visualização de dados.`,
+Em 2022, concluí a certificação em Desenvolvimento Web Full Stack pela Zero To Mastery, aprimorando minhas competências em desenvolvimento web e programação. Entre 2020 e 2023, participei de diversos cursos online voltados para programação, bancos de dados, SQL, Excel e Power BI, o que fortaleceu minhas capacidades de análise e visualização de dados.`,
   items: [
     {
       institution: "Centro Universitário Internacional (UNINTER)",

@@ -112,9 +112,14 @@ const Trabalho = () => {
                     <div className="relative w-full h-full">
                       <Image
                         src={projeto.image}
-                        fill
-                        className="object-cover"
                         alt=""
+                        fill
+                        className="object-contain"
+                        loading="lazy"
+                        quality={100}
+                        sizes="(max-width: 768px) 100vw,
+                        (max-width: 1200px) 50vw,
+                        33vw"
                       />
                     </div>
                   </div>

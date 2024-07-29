@@ -114,7 +114,13 @@ export function Globe({ globeConfig, data }: WorldProps) {
   };
 
   const _buildData = () => {
-    const arcs = data;
+    const arcs = data.filter(
+      (arc) =>
+        !isNaN(arc.startLat) &&
+        !isNaN(arc.startLng) &&
+        !isNaN(arc.endLat) &&
+        !isNaN(arc.endLng)
+    );
     let points = [];
     for (let i = 0; i < arcs.length; i++) {
       const arc = arcs[i];
@@ -237,7 +243,7 @@ export function WebGLRendererConfig() {
     gl.setPixelRatio(window.devicePixelRatio);
     gl.setSize(size.width, size.height);
     gl.setClearColor(0xffaaff, 0);
-  }, []);
+  }, [gl, size]);
 
   return null;
 }
