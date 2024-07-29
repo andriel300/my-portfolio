@@ -259,9 +259,7 @@ Tenho experiência no desenvolvimento e controle de KPIs e OKRs, assegurando a m
 export const Education = {
   icon: "/assets/resume/cap.svg",
   title: "Formação",
-  description: `Atualmente cursando Bacharelado em Ciências da Computação pelo Centro Universitário Internacional (UNINTER) (2024 - 2028), desenvolvi uma sólida compreensão dos fundamentos da computação, tanto teóricos quanto práticos. Desde 2023, trabalho como Analista de Dados na Data Mundo, onde utilizo minhas habilidades em análise de dados e ferramentas tecnológicas para solucionar desafios empresariais.
-
-Em 2022, concluí a certificação em Desenvolvimento Web Full Stack pela Zero To Mastery, aprimorando minhas competências em desenvolvimento web e programação. Entre 2020 e 2023, participei de diversos cursos online voltados para programação, bancos de dados, SQL, Excel e Power BI, o que fortaleceu minhas capacidades de análise e visualização de dados.`,
+  description: `Em constante evolução !!!`,
   items: [
     {
       institution: "Centro Universitário Internacional (UNINTER)",
@@ -276,12 +274,12 @@ Em 2022, concluí a certificação em Desenvolvimento Web Full Stack pela Zero T
     {
       institution: "Zero To Mastery",
       degree: "Certificado em Desenvolvedor web full stack",
-      duration: "2022",
+      duration: "2021 - 2022",
     },
     {
       institution: "Cursos online",
       degree: "Cursos de programação, Banco de dados, Sql, Excel e Power Bi.",
-      duration: "2020 - 2023",
+      duration: "2020 - 2024",
     },
   ],
 };
