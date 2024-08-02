@@ -37,6 +37,7 @@ I am a professional passionate about using data to solve problems and make smart
 - **React Icons:** Collection of popular icons.
 - **TypeScript:** Typed superset of JavaScript.
 - **React Hook Form:** Performant, flexible, and extensible forms with easy-to-use validation.
+- <img src="https://github.com/andriel300/my-portfolio/blob/main/tecnologias.png" alt="Tecnologias" width="500" height="400">
 
 ## Installation
 
