@@ -19,9 +19,9 @@ const RedeSocial: React.FC<Props> = ({ containerStyles, iconStyles }) => {
     <motion.div
       className={containerStyles}
       whileHover={{
-        scale: 1.2,
+        scale: 1.1,
         // rotate: 360,
-        transition: { duration: 0.5 },
+        transition: { duration: 0.2 },
       }}
     >
       {social.map((item, index) => {

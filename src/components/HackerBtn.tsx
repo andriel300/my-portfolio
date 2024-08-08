@@ -47,7 +47,7 @@ const HackerBtn = ({ label }: { label: string }) => {
         >
           {displayText}
           <FiDownload className="text-xl" />
-        </Button>{" "}
+        </Button>
       </a>
     </div>
   );

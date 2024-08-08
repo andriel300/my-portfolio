@@ -35,9 +35,7 @@ export function SkillsRadarChart() {
   return (
     <Card className="bg-primary">
       <CardHeader className="items-center">
-        <CardTitle className="text-accent">
-          Níveis de habilidade em programação
-        </CardTitle>
+        <CardTitle className="text-accent2">SKILLS LEVELS</CardTitle>
       </CardHeader>
       <CardContent className="pb-0">
         <ChartContainer
