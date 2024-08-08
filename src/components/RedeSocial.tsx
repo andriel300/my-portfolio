@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import React from "react";
+import { motion } from "framer-motion";
 
 const social = [
   { icon: <FaGithub />, path: "https://github.com/andriel300" }, // Update with your actual GitHub URL
@@ -15,7 +16,14 @@ interface Props {
 
 const RedeSocial: React.FC<Props> = ({ containerStyles, iconStyles }) => {
   return (
-    <div className={containerStyles}>
+    <motion.div
+      className={containerStyles}
+      whileHover={{
+        scale: 1.2,
+        // rotate: 360,
+        transition: { duration: 0.5 },
+      }}
+    >
       {social.map((item, index) => {
         return (
           <Link key={index} href={item.path} className={iconStyles}>
@@ -23,7 +31,7 @@ const RedeSocial: React.FC<Props> = ({ containerStyles, iconStyles }) => {
           </Link>
         );
       })}
-    </div>
+    </motion.div>
   );
 };
 

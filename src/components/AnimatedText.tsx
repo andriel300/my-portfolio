@@ -4,13 +4,14 @@ import React from "react";
 // Define the types for the animations
 const quote: Record<string, any> = {
   initial: {
-    opacity: 1,
+    opacity: 0,
   },
   animate: {
     opacity: 1,
-    delay: 2.4,
+    delay: 1,
     transition: {
-      staggerChildren: 0.08,
+      delayChildren: 2,
+      staggerChildren: 0.05,
     },
   },
 };
@@ -23,8 +24,9 @@ const singleWord: Record<string, any> = {
   animate: {
     opacity: 1,
     y: 0,
+    delay: 5,
     transition: {
-      duration: 1.5,
+      duration: 1,
     },
   },
 };

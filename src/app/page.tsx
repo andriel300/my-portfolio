@@ -35,9 +35,19 @@ const Home = () => {
             <h1 className="h1 mb-6 font-playfair">
               Olá, eu sou <span className="text-accent">ANDRIEL</span>
               <motion.span
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 10 }}
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                  delay: 3,
+                  duration: 2,
+                  ease: "linear",
+                  scale: {
+                    type: "spring",
+                    damping: 5,
+                    stiffness: 100,
+                    restDelta: 0.001,
+                  },
+                }}
                 className=" text-primary bg-accent rounded-s-full py-0.5 p-1"
               >
                 JOSÉ
