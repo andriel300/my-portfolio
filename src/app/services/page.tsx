@@ -1,7 +1,5 @@
 "use client";
 
-import Grid from "@/components/Grid";
-import Servicos from "@/components/Services";
 import { motion } from "framer-motion";
 
 const Services = () => {
@@ -15,7 +13,6 @@ const Services = () => {
             transition: { delay: 3.2, duration: 0.4, ease: "easeIn" },
           }}
         >
-          <Grid />
           {/* <Servicos /> */}
         </motion.div>
       </div>
