@@ -2,24 +2,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import AnimatedBackground from "./core/animated-background";
 
-const links = [
-  {
-    name: "home",
-    path: "/",
-  },
-  {
-    name: "currículo",
-    path: "/curriculo",
-  },
-  {
-    name: "projetos",
-    path: "/projetos",
-  },
-  {
-    name: "contato",
-    path: "/contato",
-  },
+const links: { name: string; path: string }[] = [
+  { name: "home", path: "/" },
+  { name: "currículo", path: "/curriculo" },
+  { name: "projetos", path: "/projetos" },
+  { name: "contato", path: "/contato" },
 ];
 
 const Nav = () => {
@@ -27,19 +16,31 @@ const Nav = () => {
 
   return (
     <nav className="flex gap-8">
-      {links.map((link, index) => {
-        return (
-          <Link
-            href={link.path}
-            key={index}
-            className={`${
-              link.path === pathname && "text-accent border-b-2 border-accent"
-            } capitalize font-medium hover:text-accent transition-all`}
-          >
-            {link.name}
-          </Link>
-        );
-      })}
+      <AnimatedBackground
+        defaultValue={links[0].path}
+        className="rounded-lg bg-zinc-800 dark:bg-zinc-800"
+        transition={{
+          type: "spring",
+          bounce: 0.2,
+          duration: 0.3,
+        }}
+        enableHover
+      >
+        {links.map((link, index) => {
+          return (
+            <Link
+              href={link.path}
+              key={index}
+              data-id={link.path}
+              className={`${
+                link.path === pathname && "text-accent border-b-2 border-accent"
+              } capitalize px-2 py-0.5 font-medium hover:text-accent2 transition-all`}
+            >
+              {link.name}
+            </Link>
+          );
+        })}
+      </AnimatedBackground>
     </nav>
   );
 };
