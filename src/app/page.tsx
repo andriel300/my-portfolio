@@ -2,6 +2,7 @@
 
 import AnimatedText from "@/components/AnimatedText";
 import DownLoadCVBtn from "@/components/DownLoadCVBtn";
+import FramerWrapper from "@/components/FramerWrapper";
 import MultiDirectionSlide from "@/components/multidirection";
 import Photo from "@/components/Photo";
 import RedeSocial from "@/components/RedeSocial";
@@ -40,7 +41,9 @@ const Home = () => {
 
             {/* botôes e sociais */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <DownLoadCVBtn />
+              <FramerWrapper delay={5.4}>
+                <DownLoadCVBtn />
+              </FramerWrapper>
               <div className="mb-8 xl:mb-0">
                 <RedeSocial
                   containerStyles="flex gap-6"
