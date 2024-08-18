@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
+import FramerWrapper from "./FramerWrapper";
 
 const Header = () => {
   return (
@@ -9,9 +10,11 @@ const Header = () => {
         {/* Logo */}
 
         <Link href="/">
-          <h1 className="text-4xl font-semibold">
-            ANDRIEL<span className="text-accent">.</span>
-          </h1>
+          <FramerWrapper delay={3.4}>
+            <h1 className="text-4xl font-semibold">
+              ANDRIEL<span className="text-accent">.</span>
+            </h1>
+          </FramerWrapper>
         </Link>
 
         {/* desktop nav & contato*/}
