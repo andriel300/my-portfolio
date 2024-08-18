@@ -1,12 +1,12 @@
-import Link from "next/link";
-import Nav from "./Nav";
-import MobileNav from "./MobileNav";
-import FramerWrapper from "./FramerWrapper";
+import Link from 'next/link';
+import Nav from './Nav';
+import MobileNav from './MobileNav';
+import FramerWrapper from './FramerWrapper';
 
 const Header = () => {
   return (
-    <header className="py-8 xl:py-12 text-white">
-      <div className="container mx-auto flex justify-between items-center">
+    <header className="py-8 text-white xl:py-12">
+      <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
 
         <Link href="/">
@@ -18,7 +18,7 @@ const Header = () => {
         </Link>
 
         {/* desktop nav & contato*/}
-        <div className="hidden xl:flex items-center gap-8">
+        <div className="hidden items-center gap-8 xl:flex">
           <Nav />
           <Link href="/contato"></Link>
         </div>

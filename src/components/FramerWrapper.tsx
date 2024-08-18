@@ -1,6 +1,6 @@
-"use client";
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+'use client';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 type FramerMotionProps = {
   children: React.ReactNode;
   className?: any;

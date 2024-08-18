@@ -1,31 +1,28 @@
-"use client";
+'use client';
 
-import AnimatedText from "@/components/AnimatedText";
-import DownLoadCVBtn from "@/components/DownLoadCVBtn";
-import FramerWrapper from "@/components/FramerWrapper";
-import MultiDirectionSlide from "@/components/multidirection";
-import Photo from "@/components/Photo";
-import RedeSocial from "@/components/RedeSocial";
-import Stats from "@/components/Stats";
-import { TypeAnimation } from "react-type-animation";
+import AnimatedText from '@/components/AnimatedText';
+import DownLoadCVBtn from '@/components/DownLoadCVBtn';
+import FramerWrapper from '@/components/FramerWrapper';
+import MultiDirectionSlide from '@/components/multidirection';
+import Photo from '@/components/Photo';
+import RedeSocial from '@/components/RedeSocial';
+import Stats from '@/components/Stats';
+import { TypeAnimation } from 'react-type-animation';
 
 const Home = () => {
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
-        <div
-          className="flex flex-col xl:flex-row items-center justify-between
-        xl:pt-8 xl:pb-24"
-        >
+        <div className="flex flex-col items-center justify-between xl:flex-row xl:pb-24 xl:pt-8">
           {/* text */}
-          <div className="text-center xl:text-left order-2 xl:order-none">
+          <div className="order-2 text-center xl:order-none xl:text-left">
             <TypeAnimation
               sequence={[
-                "Eu sou Analista de Dados",
+                'Eu sou Analista de Dados',
                 1000,
-                "Eu sou Analista de Bi",
+                'Eu sou Analista de Bi',
                 1000,
-                "Eu sou um Entusiasta de Tecnologia",
+                'Eu sou um Entusiasta de Tecnologia',
                 1000,
               ]}
               wrapper="span"
@@ -35,12 +32,12 @@ const Home = () => {
             />
             <MultiDirectionSlide />
             <AnimatedText
-              className="max-w-[500px] mb-9 text-white/80"
+              className="mb-9 max-w-[500px] text-white/80"
               text="Sou um analista de dados motivado, com sólidas habilidades de resolução de problemas e uma atitude positiva que me capacita a abordar desafios com uma mentalidade analítica e proativa."
             />
 
             {/* botôes e sociais */}
-            <div className="flex flex-col xl:flex-row items-center gap-8">
+            <div className="flex flex-col items-center gap-8 xl:flex-row">
               <FramerWrapper delay={5.4}>
                 <DownLoadCVBtn />
               </FramerWrapper>
@@ -56,7 +53,7 @@ const Home = () => {
             </div>
           </div>
           {/* photo */}
-          <div className="order-1 xl:order-none mb-8 xl:mb-0">
+          <div className="order-1 mb-8 xl:order-none xl:mb-0">
             <Photo />
           </div>
         </div>

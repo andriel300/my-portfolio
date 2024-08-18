@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { AnimatePresence, motion } from "framer-motion";
-import { usePathname } from "next/navigation";
-import Design from "./Design";
+import { AnimatePresence, motion } from 'framer-motion';
+import { usePathname } from 'next/navigation';
+import Design from './Design';
 
 const DesignTransition = () => {
   const pathname = usePathname();
@@ -10,19 +10,15 @@ const DesignTransition = () => {
     <>
       <AnimatePresence mode="wait">
         <div key={pathname}>
-          <div
-            className="h-screen w-screen fixed top-0
-          left-0 right-0 pointer-events-none z-40 flex"
-          >
+          <div className="pointer-events-none fixed left-0 right-0 top-0 z-40 flex h-screen w-screen">
             <Design />
           </div>
           <motion.div
-            className="h-screen w-screen fixed bg-primary top-0
-          pointer-events-none"
+            className="pointer-events-none fixed top-0 h-screen w-screen bg-primary"
             initial={{ opacity: 1 }}
             animate={{
               opacity: 0,
-              transition: { delay: 1, duration: 0.4, ease: "easeInOut" },
+              transition: { delay: 1, duration: 0.4, ease: 'easeInOut' },
             }}
           />
         </div>

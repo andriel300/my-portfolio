@@ -1,33 +1,33 @@
-"use client";
+'use client';
 
-import { PolarAngleAxis, PolarGrid, Radar, RadarChart } from "recharts";
+import { PolarAngleAxis, PolarGrid, Radar, RadarChart } from 'recharts';
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
   ChartConfig,
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
-} from "@/components/ui/chart";
+} from '@/components/ui/chart';
 
 const chartData = [
-  { skill: "Python", level: 87 },
-  { skill: "Pandas", level: 78 },
-  { skill: "Excel", level: 61 },
-  { skill: "SQL", level: 69 },
-  { skill: "Numpy", level: 65 },
-  { skill: "Nextjs", level: 74 },
-  { skill: "Matplotlib", level: 65 },
-  { skill: "Javascript", level: 92 },
-  { skill: "Scikit-Learn", level: 54 },
-  { skill: "PowerBI", level: 85 },
-  { skill: "Tableau", level: 49 },
+  { skill: 'Python', level: 87 },
+  { skill: 'Pandas', level: 78 },
+  { skill: 'Excel', level: 61 },
+  { skill: 'SQL', level: 69 },
+  { skill: 'Numpy', level: 65 },
+  { skill: 'Nextjs', level: 74 },
+  { skill: 'Matplotlib', level: 65 },
+  { skill: 'Javascript', level: 92 },
+  { skill: 'Scikit-Learn', level: 54 },
+  { skill: 'PowerBI', level: 85 },
+  { skill: 'Tableau', level: 49 },
 ];
 
 const chartConfig = {
   desktop: {
-    label: "Desktop",
-    color: "hsl(var(--chart-1))",
+    label: 'Desktop',
+    color: 'hsl(var(--chart-1))',
   },
 } satisfies ChartConfig;
 

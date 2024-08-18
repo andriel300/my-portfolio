@@ -1,11 +1,11 @@
-import Link from "next/link";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import React from "react";
-import { motion } from "framer-motion";
+import Link from 'next/link';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import React from 'react';
+import { motion } from 'framer-motion';
 
 const social = [
-  { icon: <FaGithub />, path: "https://github.com/andriel300" }, // Update with your actual GitHub URL
-  { icon: <FaLinkedinIn />, path: "https://www.linkedin.com/in/andrieljose/" }, // Update with your actual LinkedIn URL
+  { icon: <FaGithub />, path: 'https://github.com/andriel300' }, // Update with your actual GitHub URL
+  { icon: <FaLinkedinIn />, path: 'https://www.linkedin.com/in/andrieljose/' }, // Update with your actual LinkedIn URL
 ];
 
 // Update the Props interface
