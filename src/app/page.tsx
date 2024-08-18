@@ -2,10 +2,10 @@
 
 import AnimatedText from "@/components/AnimatedText";
 import DownLoadCVBtn from "@/components/DownLoadCVBtn";
+import MultiDirectionSlide from "@/components/multidirection";
 import Photo from "@/components/Photo";
 import RedeSocial from "@/components/RedeSocial";
 import Stats from "@/components/Stats";
-import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
@@ -32,27 +32,7 @@ const Home = () => {
               className="text-xl text-white"
               repeat={Infinity}
             />
-            <h1 className="h1 mb-6 font-playfair">
-              Olá, eu sou <span className="text-accent">ANDRIEL</span>
-              <motion.span
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{
-                  delay: 3,
-                  duration: 2,
-                  ease: "linear",
-                  scale: {
-                    type: "spring",
-                    damping: 5,
-                    stiffness: 100,
-                    restDelta: 0.001,
-                  },
-                }}
-                className=" text-primary bg-accent rounded-s-full py-0.5 p-1"
-              >
-                JOSÉ
-              </motion.span>
-            </h1>
+            <MultiDirectionSlide />
             <AnimatedText
               className="max-w-[500px] mb-9 text-white/80"
               text="Sou um analista de dados motivado, com sólidas habilidades de resolução de problemas e uma atitude positiva que me capacita a abordar desafios com uma mentalidade analítica e proativa."

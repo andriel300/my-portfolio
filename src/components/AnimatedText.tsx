@@ -10,7 +10,7 @@ const quote: Record<string, any> = {
     opacity: 1,
     delay: 1,
     transition: {
-      delayChildren: 2,
+      delayChildren: 4.4,
       staggerChildren: 0.05,
     },
   },

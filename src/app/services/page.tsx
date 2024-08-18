@@ -16,7 +16,7 @@ const Services = () => {
           }}
         >
           <Grid />
-          <Servicos />
+          {/* <Servicos /> */}
         </motion.div>
       </div>
     </section>
