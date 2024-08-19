@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss';
+const plugin = require('tailwindcss/plugin');
 
 const config = {
   darkMode: ['class'],
@@ -25,6 +26,11 @@ const config = {
       primary: 'var(--font-jetbrainsMono)',
     },
     extend: {
+      textShadow: {
+        sm: '0 1px 2px var(--tw-shadow-color)',
+        DEFAULT: '0 2px 4px var(--tw-shadow-color)',
+        lg: '0 8px 16px var(--tw-shadow-color)',
+      },
       colors: {
         primary: '#16161a',
         accent: {
@@ -49,7 +55,19 @@ const config = {
       },
     },
   },
-  plugins: [require('tailwindcss-animate')],
+  plugins: [
+    require('tailwindcss-animate'),
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          'text-shadow': (value: any) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme('textShadow') },
+      );
+    }),
+  ],
 } satisfies Config;
 
 export default config;

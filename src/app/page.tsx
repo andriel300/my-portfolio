@@ -1,6 +1,7 @@
 'use client';
 
 import AnimatedText from '@/components/AnimatedText';
+import AnimatedTextUnderlign from '@/components/AnimatedTextUnderlign';
 import DownLoadCVBtn from '@/components/DownLoadCVBtn';
 import FramerWrapper from '@/components/FramerWrapper';
 import MultiDirectionSlide from '@/components/multidirection';
@@ -31,8 +32,9 @@ const Home = () => {
               repeat={Infinity}
             />
             <MultiDirectionSlide />
+            {/* <AnimatedTextUnderlign /> */}
             <AnimatedText
-              className="mb-9 max-w-[500px] text-white/80"
+              className="relative z-10 mb-9 max-w-[500px] text-white/80"
               text="Sou um analista de dados motivado, com sólidas habilidades de resolução de problemas e uma atitude positiva que me capacita a abordar desafios com uma mentalidade analítica e proativa."
             />
 

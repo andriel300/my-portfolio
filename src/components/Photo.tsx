@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const Photo = () => {
   return (
-    <div className="relative h-full w-full">
+    <div className="relative z-10 h-full w-full">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{
@@ -43,7 +43,7 @@ const Photo = () => {
         >
           <motion.path
             d="M 3 3 H 498 V 498 H 3 Z"
-            stroke="#8B6AF1"
+            stroke="#2caf86"
             strokeWidth="4"
             strokeLinecap="round"
             strokeLinejoin="round"
