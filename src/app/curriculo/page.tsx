@@ -1,5 +1,6 @@
 'use client';
 
+import { FC } from 'react';
 import {
   FaHtml5,
   FaCss3,
@@ -31,33 +32,46 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 import { motion } from 'framer-motion';
 import { SkillsRadarChart } from '@/components/SkillsRadarChart';
 import FramerWrapper from '@/components/FramerWrapper';
+import AnimatedBackground from '@/components/core/animated-background';
+
+// Skills Data Type
+type Skill = {
+  icon: FC;
+  name: string;
+};
+
+type Skills = {
+  title: string;
+  description: string;
+  skillList: Skill[];
+};
 
 // Skills data
-const skills = {
+const skills: Skills = {
   title: 'Minhas Habilidades',
   description: `
 Tenho uma vasta gama de habilidades técnicas adquiridas ao longo dos anos, abrangendo várias áreas da ciência da computação e desenvolvimento de software. Minha experiência inclui tanto o frontend quanto o backend, bem como ferramentas de design e análise de dados.
   `,
   skillList: [
-    { icon: <FaHtml5 />, name: 'html 5' },
-    { icon: <FaCss3 />, name: 'css 3' },
-    { icon: <FaJs />, name: 'javascript' },
-    { icon: <FaReact />, name: 'react.js' },
-    { icon: <SiNextdotjs />, name: 'next.js' },
-    { icon: <SiTailwindcss />, name: 'tailwind.css' },
-    { icon: <FaNodeJs />, name: 'node.js' },
-    { icon: <FaFigma />, name: 'figma' },
-    { icon: <FaPython />, name: 'python' },
-    { icon: <FaDatabase />, name: 'banco de dados' },
-    { icon: <SiArchlinux />, name: 'i use arch linux btw' },
-    { icon: <SiTypescript />, name: 'typescript' },
-    { icon: <SiPowerbi />, name: 'power bi' },
-    { icon: <SiJupyter />, name: 'jupyter notebook' },
-    { icon: <BiLogoPostgresql />, name: 'postgresql' },
+    { icon: FaHtml5, name: 'html 5' },
+    { icon: FaCss3, name: 'css 3' },
+    { icon: FaJs, name: 'javascript' },
+    { icon: FaReact, name: 'react.js' },
+    { icon: SiNextdotjs, name: 'next.js' },
+    { icon: SiTailwindcss, name: 'tailwind.css' },
+    { icon: FaNodeJs, name: 'node.js' },
+    { icon: FaFigma, name: 'figma' },
+    { icon: FaPython, name: 'python' },
+    { icon: FaDatabase, name: 'banco de dados' },
+    { icon: SiArchlinux, name: 'i use arch linux btw' },
+    { icon: SiTypescript, name: 'typescript' },
+    { icon: SiPowerbi, name: 'power bi' },
+    { icon: SiJupyter, name: 'jupyter notebook' },
+    { icon: BiLogoPostgresql, name: 'postgresql' },
   ],
 };
 
-const Curriculo = () => {
+const Curriculo: React.FC = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -155,22 +169,37 @@ const Curriculo = () => {
                     </p>
                   </div>
                   <ul className="mb-4 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px]">
-                    {skills.skillList.map((skill, index) => (
-                      <li key={index}>
-                        <TooltipProvider delayDuration={100}>
-                          <Tooltip>
-                            <TooltipTrigger className="group flex h-[150px] w-full items-center justify-center rounded-xl bg-[#232329]">
-                              <div className="text-6xl transition-all duration-300 group-hover:text-accent">
-                                {skill.icon}
-                              </div>
-                            </TooltipTrigger>
-                            <TooltipContent>
-                              <p className="capitalize">{skill.name}</p>
-                            </TooltipContent>
-                          </Tooltip>
-                        </TooltipProvider>
-                      </li>
-                    ))}
+                    <AnimatedBackground
+                      // defaultValue={skills.skillList}
+                      className="rounded-lg bg-zinc-800"
+                      transition={{
+                        type: 'spring',
+                        bounce: 0.2,
+                        duration: 0.3,
+                      }}
+                      enableHover
+                    >
+                      {skills.skillList.map((skill, index) => (
+                        <li
+                          key={index}
+                          data-id={skill}
+                          className="relative flex items-center justify-center"
+                        >
+                          <TooltipProvider delayDuration={100}>
+                            <Tooltip>
+                              <TooltipTrigger className="group flex h-[150px] w-full items-center justify-center rounded-xl">
+                                <div className="text-6xl transition-all duration-300 group-hover:text-accent2">
+                                  <skill.icon />
+                                </div>
+                              </TooltipTrigger>
+                              <TooltipContent>
+                                <p className="capitalize">{skill.name}</p>
+                              </TooltipContent>
+                            </Tooltip>
+                          </TooltipProvider>
+                        </li>
+                      ))}
+                    </AnimatedBackground>
                   </ul>
                 </div>
               </FramerWrapper>
