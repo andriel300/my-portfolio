@@ -33,7 +33,7 @@ const chartConfig = {
 
 export function SkillsRadarChart() {
   return (
-    <Card className="bg-primary">
+    <Card className="m-4 bg-primary">
       <CardHeader className="items-center">
         <CardTitle className="text-accent2">SKILLS LEVELS</CardTitle>
       </CardHeader>
