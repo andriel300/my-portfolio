@@ -1,7 +1,8 @@
 import type { Config } from 'tailwindcss';
-const plugin = require('tailwindcss/plugin');
+import plugin from 'tailwindcss/plugin';
+import type { PluginAPI } from 'tailwindcss/types/config';
 
-const config = {
+const config: Config = {
   darkMode: ['class'],
   content: [
     './pages/**/*.{ts,tsx}',
@@ -57,10 +58,10 @@ const config = {
   },
   plugins: [
     require('tailwindcss-animate'),
-    plugin(function ({ matchUtilities, theme }) {
+    plugin(function ({ matchUtilities, theme }: PluginAPI) {
       matchUtilities(
         {
-          'text-shadow': (value: any) => ({
+          'text-shadow': (value: string) => ({
             textShadow: value,
           }),
         },
@@ -68,6 +69,6 @@ const config = {
       );
     }),
   ],
-} satisfies Config;
+};
 
 export default config;
