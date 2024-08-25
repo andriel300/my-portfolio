@@ -1,29 +1,29 @@
-'use client';
+"use client";
 
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 
-import { useForm, SubmitHandler } from 'react-hook-form';
+import { useForm, SubmitHandler } from "react-hook-form";
 
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
-import { motion } from 'framer-motion';
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const info = [
   {
     icon: <FaPhoneAlt />,
-    title: 'Celular',
-    description: '+55 (18) 99819-0820',
+    title: "Celular",
+    description: "+55 (18) 99819-0820",
   },
   {
     icon: <FaEnvelope />,
-    title: 'Email',
-    description: 'andrielscript@gmail.com',
+    title: "Email",
+    description: "andrielscript@gmail.com",
   },
   {
     icon: <FaMapMarkerAlt />,
-    title: 'Endereço',
-    description: 'Parapuã Centro, Rua Fortaleza 1011',
+    title: "Endereço",
+    description: "Parapuã Centro, Rua Fortaleza 1011",
   },
 ];
 
@@ -45,18 +45,18 @@ const Contato = () => {
   } = useForm<FormData>();
 
   const onSubmit: SubmitHandler<FormData> = async (data) => {
-    const response = await fetch('https://getform.io/f/bkkgpodb', {
-      method: 'POST',
+    const response = await fetch("https://getform.io/f/bkkgpodb", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
     });
 
     if (response.ok) {
-      alert('Formulário enviado com sucesso!');
+      alert("Formulário enviado com sucesso!");
     } else {
-      alert('Error. Tente novamente!');
+      alert("Error. Tente novamente!");
     }
   };
 
@@ -65,7 +65,7 @@ const Contato = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: 'easeIn' },
+        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
       }}
       className="py-6"
     >
@@ -93,43 +93,43 @@ const Contato = () => {
                 <Input
                   type="text"
                   placeholder="Digite o Nome Completo"
-                  {...register('name', {
+                  {...register("name", {
                     required: true,
                     maxLength: 100,
                   })}
                 />
                 {errors.name && (
                   <p className="mt-1 text-red-600">
-                    {errors.name.type === 'required' &&
-                      'Este campo é necessário.'}
-                    {errors.name.type === 'maxLength' &&
-                      'O comprimento máximo é 100 char.'}
+                    {errors.name.type === "required" &&
+                      "Este campo é necessário."}
+                    {errors.name.type === "maxLength" &&
+                      "O comprimento máximo é 100 char."}
                   </p>
                 )}
                 <Input
                   type="email"
                   placeholder="Digite o E-mail"
-                  {...register('email', {
+                  {...register("email", {
                     required: true,
                     pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                   })}
                 />
                 {errors.email && (
                   <p className="mt-1 text-red-600">
-                    {errors.email.type === 'required' &&
-                      'Este campo é necessário.'}
-                    {errors.email.type === 'pattern' && 'Email Inválido.'}
+                    {errors.email.type === "required" &&
+                      "Este campo é necessário."}
+                    {errors.email.type === "pattern" && "Email Inválido."}
                   </p>
                 )}
                 <Input
                   type="phone"
                   placeholder="Celular (Opcional)"
-                  {...register('phone')}
+                  {...register("phone")}
                 />
                 <Input
                   type="tel"
                   placeholder="Telefone (Opcional)"
-                  {...register('tel')}
+                  {...register("tel")}
                 />
               </div>
 
@@ -137,11 +137,11 @@ const Contato = () => {
               <Textarea
                 className="h-[200px]"
                 placeholder="Escreva sua mensagem aqui"
-                {...register('message', {
-                  required: 'Este campo é necessário.',
+                {...register("message", {
+                  required: "Este campo é necessário.",
                   maxLength: {
                     value: 2000,
-                    message: 'O comprimento máximo é 2000 char.',
+                    message: "O comprimento máximo é 2000 char.",
                   },
                 })}
               />

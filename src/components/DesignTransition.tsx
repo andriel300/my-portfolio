@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { AnimatePresence, motion } from 'framer-motion';
-import { usePathname } from 'next/navigation';
-import Design from './Design';
+import { AnimatePresence, motion } from "framer-motion";
+import { usePathname } from "next/navigation";
+import Design from "./Design";
 
 const DesignTransition = () => {
   const pathname = usePathname();
@@ -18,7 +18,7 @@ const DesignTransition = () => {
             initial={{ opacity: 1 }}
             animate={{
               opacity: 0,
-              transition: { delay: 1, duration: 0.4, ease: 'easeInOut' },
+              transition: { delay: 1, duration: 0.4, ease: "easeInOut" },
             }}
           />
         </div>

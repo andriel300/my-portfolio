@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { AnimatePresence, motion } from 'framer-motion';
-import { usePathname } from 'next/navigation';
+import { AnimatePresence, motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 type Props = {
   children?: React.ReactNode;
@@ -16,7 +16,7 @@ const PageTransition = ({ children }: Props) => {
           initial={{ opacity: 1 }}
           animate={{
             opacity: 0,
-            transition: { delay: 1, duration: 0.4, ease: 'easeInOut' },
+            transition: { delay: 1, duration: 0.4, ease: "easeInOut" },
           }}
           className="pointer-events-none fixed top-0 h-screen w-screen bg-accent"
         />

@@ -1,21 +1,21 @@
-'use client';
-import { useState, useEffect } from 'react';
-import { Button } from './ui/button';
-import { FiDownload } from 'react-icons/fi';
+"use client";
+import { useState, useEffect } from "react";
+import { Button } from "./ui/button";
+import { FiDownload } from "react-icons/fi";
 
 const HackerBtn = ({ label }: { label: string }) => {
   const [displayText, setDisplayText] = useState(label);
-  const charset = 'abcdefghijklmnopqrstuvwxyz';
+  const charset = "abcdefghijklmnopqrstuvwxyz";
 
   const randomChars = (length: number) => {
     return Array.from(
       { length },
       () => charset[Math.floor(Math.random() * charset.length)],
-    ).join('');
+    ).join("");
   };
 
   const scramble = async (input: string) => {
-    let prefix = '';
+    let prefix = "";
     for (let index = 0; index < input.length; index++) {
       await new Promise((resolve) => setTimeout(resolve, 50));
       prefix += input.charAt(index);
@@ -25,7 +25,7 @@ const HackerBtn = ({ label }: { label: string }) => {
 
   const startScrambling = () => {
     scramble(label);
-    setTimeout(() => console.log('Submitted'), label.length * 50);
+    setTimeout(() => console.log("Submitted"), label.length * 50);
   };
 
   useEffect(() => {

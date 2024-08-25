@@ -1,14 +1,13 @@
-'use client';
+"use client";
 
-import AnimatedText from '@/components/AnimatedText';
-import AnimatedTextUnderlign from '@/components/AnimatedTextUnderlign';
-import DownLoadCVBtn from '@/components/DownLoadCVBtn';
-import FramerWrapper from '@/components/FramerWrapper';
-import MultiDirectionSlide from '@/components/multidirection';
-import Photo from '@/components/Photo';
-import RedeSocial from '@/components/RedeSocial';
-import Stats from '@/components/Stats';
-import { TypeAnimation } from 'react-type-animation';
+import AnimatedText from "@/components/AnimatedText";
+import DownLoadCVBtn from "@/components/DownLoadCVBtn";
+import FramerWrapper from "@/components/FramerWrapper";
+import MultiDirectionSlide from "@/components/MultiDirection";
+import Photo from "@/components/Photo";
+import RedeSocial from "@/components/RedeSocial";
+import Stats from "@/components/Stats";
+import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
   return (
@@ -19,11 +18,11 @@ const Home = () => {
           <div className="order-2 text-center xl:order-none xl:text-left">
             <TypeAnimation
               sequence={[
-                'Eu sou Analista de Dados',
+                "Eu sou Analista de Dados",
                 1000,
-                'Eu sou Analista de Bi',
+                "Eu sou Analista de Bi",
                 1000,
-                'Eu sou um Entusiasta de Tecnologia',
+                "Eu sou um Entusiasta de Tecnologia",
                 1000,
               ]}
               wrapper="span"
@@ -32,7 +31,6 @@ const Home = () => {
               repeat={Infinity}
             />
             <MultiDirectionSlide />
-            {/* <AnimatedTextUnderlign /> */}
             <AnimatedText
               className="relative z-10 mb-9 max-w-[500px] text-white/80"
               text="Sou um analista de dados motivado, com sólidas habilidades de resolução de problemas e uma atitude positiva que me capacita a abordar desafios com uma mentalidade analítica e proativa."

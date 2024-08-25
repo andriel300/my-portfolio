@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import React from 'react';
-import HackerBtn from './HackerBtn';
+import Link from "next/link";
+import React from "react";
+import HackerBtn from "./HackerBtn";
 
 const DownLoadCVBtn = () => {
   return (

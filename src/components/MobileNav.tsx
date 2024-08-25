@@ -1,15 +1,15 @@
-'use client';
+"use client";
 
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { usePathname } from 'next/navigation';
-import Link from 'next/link';
-import { CiMenuFries } from 'react-icons/ci';
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+import { CiMenuFries } from "react-icons/ci";
 
 const links = [
-  { name: 'home', path: '/' },
-  { name: 'currículo', path: '/curriculo' },
-  { name: 'projetos', path: '/projetos' },
-  { name: 'contato', path: '/contato' },
+  { name: "home", path: "/" },
+  { name: "currículo", path: "/curriculo" },
+  { name: "projetos", path: "/projetos" },
+  { name: "contato", path: "/contato" },
 ];
 
 const MobileNav = () => {
@@ -38,7 +38,7 @@ const MobileNav = () => {
                 key={index}
                 className={`${
                   link.path === pathname &&
-                  'border-b-2 border-accent text-accent'
+                  "border-b-2 border-accent text-accent"
                 } text-xl capitalize transition-all hover:text-accent`}
               >
                 {link.name}

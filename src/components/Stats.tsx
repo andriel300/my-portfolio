@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import CountUp from 'react-countup';
-import { StatsExperience } from '@/data';
+import CountUp from "react-countup";
+import { StatsExperience } from "@/data";
 
 const Stats = () => {
   return (
@@ -21,9 +21,7 @@ const Stats = () => {
                   className="text-4xl font-extrabold xl:text-6xl"
                 />
                 <p
-                  className={`${
-                    item.text.length < 15 ? 'max-w-[100px]' : 'max-w-[150px]'
-                  } leading-snug text-white/80`}
+                  className={`${item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"} leading-snug text-white/80`}
                 >
                   {item.text}
                 </p>

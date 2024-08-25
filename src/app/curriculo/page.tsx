@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { FC } from 'react';
+import { FC } from "react";
 import {
   FaHtml5,
   FaCss3,
@@ -10,8 +10,8 @@ import {
   FaReact,
   FaNodeJs,
   FaFigma,
-} from 'react-icons/fa';
-import { BiLogoPostgresql } from 'react-icons/bi';
+} from "react-icons/fa";
+import { BiLogoPostgresql } from "react-icons/bi";
 import {
   SiPowerbi,
   SiJupyter,
@@ -19,20 +19,20 @@ import {
   SiArchlinux,
   SiTailwindcss,
   SiNextdotjs,
-} from 'react-icons/si';
-import { Sobre, Experiencia, Education } from '@/data';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+} from "react-icons/si";
+import { Sobre, Experiencia, Education } from "@/data";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from '@/components/ui/tooltip';
-import { ScrollArea } from '@/components/ui/scroll-area';
-import { motion } from 'framer-motion';
-import { SkillsRadarChart } from '@/components/SkillsRadarChart';
-import FramerWrapper from '@/components/FramerWrapper';
-import AnimatedBackground from '@/components/core/animated-background';
+} from "@/components/ui/tooltip";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { motion } from "framer-motion";
+import { SkillsRadarChart } from "@/components/SkillsRadarChart";
+import FramerWrapper from "@/components/FramerWrapper";
+import AnimatedBackground from "@/components/core/animated-background";
 
 // Skills Data Type
 type Skill = {
@@ -48,26 +48,26 @@ type Skills = {
 
 // Skills data
 const skills: Skills = {
-  title: 'Minhas Habilidades',
+  title: "Minhas Habilidades",
   description: `
 Tenho uma vasta gama de habilidades técnicas adquiridas ao longo dos anos, abrangendo várias áreas da ciência da computação e desenvolvimento de software. Minha experiência inclui tanto o frontend quanto o backend, bem como ferramentas de design e análise de dados.
   `,
   skillList: [
-    { icon: FaHtml5, name: 'html 5' },
-    { icon: FaCss3, name: 'css 3' },
-    { icon: FaJs, name: 'javascript' },
-    { icon: FaReact, name: 'react.js' },
-    { icon: SiNextdotjs, name: 'next.js' },
-    { icon: SiTailwindcss, name: 'tailwind.css' },
-    { icon: FaNodeJs, name: 'node.js' },
-    { icon: FaFigma, name: 'figma' },
-    { icon: FaPython, name: 'python' },
-    { icon: FaDatabase, name: 'banco de dados' },
-    { icon: SiArchlinux, name: 'i use arch linux btw' },
-    { icon: SiTypescript, name: 'typescript' },
-    { icon: SiPowerbi, name: 'power bi' },
-    { icon: SiJupyter, name: 'jupyter notebook' },
-    { icon: BiLogoPostgresql, name: 'postgresql' },
+    { icon: FaHtml5, name: "html 5" },
+    { icon: FaCss3, name: "css 3" },
+    { icon: FaJs, name: "javascript" },
+    { icon: FaReact, name: "react.js" },
+    { icon: SiNextdotjs, name: "next.js" },
+    { icon: SiTailwindcss, name: "tailwind.css" },
+    { icon: FaNodeJs, name: "node.js" },
+    { icon: FaFigma, name: "figma" },
+    { icon: FaPython, name: "python" },
+    { icon: FaDatabase, name: "banco de dados" },
+    { icon: SiArchlinux, name: "i use arch linux btw" },
+    { icon: SiTypescript, name: "typescript" },
+    { icon: SiPowerbi, name: "power bi" },
+    { icon: SiJupyter, name: "jupyter notebook" },
+    { icon: BiLogoPostgresql, name: "postgresql" },
   ],
 };
 
@@ -77,7 +77,7 @@ const Curriculo: React.FC = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: 'easeIn' },
+        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
       }}
       className="flex min-h-[80vh] items-center justify-center py-12 xl:py-0"
     >
@@ -173,7 +173,7 @@ const Curriculo: React.FC = () => {
                       // defaultValue={skills.skillList}
                       className="rounded-lg bg-zinc-800"
                       transition={{
-                        type: 'spring',
+                        type: "spring",
                         bounce: 0.2,
                         duration: 0.3,
                       }}

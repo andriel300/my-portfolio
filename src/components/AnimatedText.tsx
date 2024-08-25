@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
-import React from 'react';
+import { motion } from "framer-motion";
+import React from "react";
 
 // Define the types for the animations
 const quote: Record<string, any> = {
@@ -39,7 +39,7 @@ interface AnimatedTextProps {
 
 const AnimatedText: React.FC<AnimatedTextProps> = ({
   text,
-  className = '',
+  className = "",
 }) => {
   return (
     <div>
@@ -49,9 +49,9 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
         initial="initial"
         animate="animate"
       >
-        {text.split(' ').map((word, index) => (
+        {text.split(" ").map((word, index) => (
           <motion.span
-            key={word + '-' + index}
+            key={word + "-" + index}
             className="inline-block"
             variants={singleWord}
           >

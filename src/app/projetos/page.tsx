@@ -1,22 +1,22 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import React, { useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import { BsArrowUpRight, BsGithub } from 'react-icons/bs';
-import { Projetos } from '@/data';
-import Link from 'next/link';
-import Image from 'next/image';
-import WorkSliderBtns from '@/components/WorkSliderBtns';
+import { motion } from "framer-motion";
+import React, { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { BsArrowUpRight, BsGithub } from "react-icons/bs";
+import { Projetos } from "@/data";
+import Link from "next/link";
+import Image from "next/image";
+import WorkSliderBtns from "@/components/WorkSliderBtns";
 
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from '@/components/ui/tooltip';
-import FramerWrapper from '@/components/FramerWrapper';
+} from "@/components/ui/tooltip";
+import FramerWrapper from "@/components/FramerWrapper";
 
 const Trabalho = () => {
   const [projeto, setProjeto] = useState(Projetos[0]);
@@ -33,7 +33,7 @@ const Trabalho = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: 'easeIn' },
+        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
       }}
       className="flex min-h-[80vh] flex-col justify-center py-12 xl:px-0"
     >
@@ -63,7 +63,7 @@ const Trabalho = () => {
                     <li key={index} className="text-xl text-accent2">
                       {item.name}
                       {/* remover a ultima virgula (comma) da letra */}
-                      {index !== projeto.stack.length - 1 && ','}
+                      {index !== projeto.stack.length - 1 && ","}
                     </li>
                   );
                 })}

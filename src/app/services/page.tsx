@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 const Services = () => {
   return (
@@ -10,7 +10,7 @@ const Services = () => {
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
-            transition: { delay: 3.2, duration: 0.4, ease: 'easeIn' },
+            transition: { delay: 3.2, duration: 0.4, ease: "easeIn" },
           }}
         >
           {/* <Servicos /> */}

@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import Nav from './Nav';
-import MobileNav from './MobileNav';
-import FramerWrapper from './FramerWrapper';
+import Link from "next/link";
+import Nav from "./Nav";
+import MobileNav from "./MobileNav";
+import FramerWrapper from "./FramerWrapper";
 
 const Header = () => {
   return (

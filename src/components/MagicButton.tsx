@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 /**
  *  UI: border magic from tailwind css btns
@@ -32,9 +32,9 @@ const MagicButton = ({
       <span
         className={`inline-flex h-full w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-slate-950 px-7 text-sm font-medium text-white backdrop-blur-3xl ${otherClasses}`}
       >
-        {position === 'left' && icon}
+        {position === "left" && icon}
         {title}
-        {position === 'right' && icon}
+        {position === "right" && icon}
       </span>
     </button>
   );
