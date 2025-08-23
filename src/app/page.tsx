@@ -18,13 +18,14 @@ const Home = () => {
           <div className="order-2 text-center xl:order-none xl:text-left">
             <TypeAnimation
               sequence={[
-                "Eu sou Analista de Dados",
+               "I'm a Full Stack Developer",
                 1000,
-                "Eu sou Analista de Bi",
+                "I'm a Frontend Specialist",
                 1000,
-                "Eu sou um Entusiasta de Tecnologia",
+                "I'm a Backend Engineer",
                 1000,
-              ]}
+                "I'm a Tech Enthusiast",
+                1000,             ]}
               wrapper="span"
               speed={50}
               className="text-xl text-white"
@@ -33,8 +34,7 @@ const Home = () => {
             <MultiDirectionSlide />
             <AnimatedText
               className="relative z-10 mb-9 max-w-[500px] text-white/80"
-              text="Sou um analista de dados motivado, com sólidas habilidades de resolução de problemas e uma atitude positiva que me capacita a abordar desafios com uma mentalidade analítica e proativa."
-            />
+             text="I'm a passionate full stack developer with expertise in both frontend and backend technologies. I thrive on building responsive, scalable web applications with clean code and intuitive user experiences."/>
 
             {/* botôes e sociais */}
             <div className="flex flex-col items-center gap-8 xl:flex-row">
