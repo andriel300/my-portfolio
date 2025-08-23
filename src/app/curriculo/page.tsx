@@ -10,11 +10,15 @@ import {
   FaReact,
   FaNodeJs,
   FaFigma,
+  FaGitAlt,
+  FaAws
 } from "react-icons/fa";
-import { BiLogoPostgresql } from "react-icons/bi";
+import { BiLogoPostgresql, BiLogoMongodb } from "react-icons/bi";
 import {
   SiPowerbi,
+  SiDocker,
   SiJupyter,
+  SiExpress,
   SiTypescript,
   SiArchlinux,
   SiTailwindcss,
@@ -48,26 +52,34 @@ type Skills = {
 
 // Skills data
 const skills: Skills = {
-  title: "Minhas Habilidades",
-  description: `
-Tenho uma vasta gama de habilidades técnicas adquiridas ao longo dos anos, abrangendo várias áreas da ciência da computação e desenvolvimento de software. Minha experiência inclui tanto o frontend quanto o backend, bem como ferramentas de design e análise de dados.
-  `,
-  skillList: [
-    { icon: FaHtml5, name: "html 5" },
-    { icon: FaCss3, name: "css 3" },
-    { icon: FaJs, name: "javascript" },
-    { icon: FaReact, name: "react.js" },
-    { icon: SiNextdotjs, name: "next.js" },
-    { icon: SiTailwindcss, name: "tailwind.css" },
-    { icon: FaNodeJs, name: "node.js" },
-    { icon: FaFigma, name: "figma" },
-    { icon: FaPython, name: "python" },
-    { icon: FaDatabase, name: "banco de dados" },
-    { icon: SiArchlinux, name: "i use arch linux btw" },
-    { icon: SiTypescript, name: "typescript" },
-    { icon: SiPowerbi, name: "power bi" },
-    { icon: SiJupyter, name: "jupyter notebook" },
-    { icon: BiLogoPostgresql, name: "postgresql" },
+  title: "My Technical Skills",
+  description: `I have a comprehensive skill set spanning frontend, backend, database, and DevOps technologies. Below is a visual representation of my proficiency across key areas of full stack development.`,
+   skillList: [
+    // Frontend
+    { icon: FaHtml5, name: "HTML5", category: "Frontend", proficiency: 95 },
+    { icon: FaCss3, name: "CSS3", category: "Frontend", proficiency: 90 },
+    { icon: FaJs, name: "JavaScript", category: "Frontend", proficiency: 92 },
+    { icon: SiTypescript, name: "TypeScript", category: "Frontend", proficiency: 85 },
+    { icon: FaReact, name: "React.js", category: "Frontend", proficiency: 88 },
+    { icon: SiNextdotjs, name: "Next.js", category: "Frontend", proficiency: 87 },
+    { icon: SiTailwindcss, name: "Tailwind CSS", category: "Frontend", proficiency: 90 },
+    
+    // Backend
+    { icon: FaNodeJs, name: "Node.js", category: "Backend", proficiency: 84 },
+    { icon: SiExpress, name: "Express.js", category: "Backend", proficiency: 82 },
+    { icon: FaPython, name: "Python", category: "Backend", proficiency: 80 },
+    
+    // Database
+    { icon: BiLogoMongodb, name: "MongoDB", category: "Database", proficiency: 78 },
+    { icon: BiLogoPostgresql, name: "PostgreSQL", category: "Database", proficiency: 75 },
+    { icon: FaDatabase, name: "SQL", category: "Database", proficiency: 80 },
+    
+    // Tools & DevOps
+    { icon: FaGitAlt, name: "Git", category: "Tools", proficiency: 88 },
+    { icon: SiDocker, name: "Docker", category: "DevOps", proficiency: 70 },
+    { icon: FaAws, name: "AWS", category: "DevOps", proficiency: 65 },
+    { icon: FaFigma, name: "Figma", category: "Design", proficiency: 75 },
+    { icon: SiArchlinux, name: "Linux", category: "Tools", proficiency: 85 },
   ],
 };
 
@@ -87,10 +99,10 @@ const Curriculo: React.FC = () => {
           className="flex flex-col gap-[60px] xl:flex-row"
         >
           <TabsList className="mx-auto flex w-full max-w-[380px] flex-col gap-6 xl:mx-0">
-            <TabsTrigger value="experiencia">Experiência</TabsTrigger>
-            <TabsTrigger value="education">Educação</TabsTrigger>
-            <TabsTrigger value="skills">Habilidades</TabsTrigger>
-            <TabsTrigger value="sobre">Sobre min</TabsTrigger>
+            <TabsTrigger value="experiencia">Experience</TabsTrigger>
+            <TabsTrigger value="education">Education</TabsTrigger>
+            <TabsTrigger value="skills">Skills</TabsTrigger>
+            <TabsTrigger value="sobre">About me</TabsTrigger>
           </TabsList>
 
           {/* Content */}
@@ -134,21 +146,46 @@ const Curriculo: React.FC = () => {
                   <p className="mx-auto max-w-[600px] whitespace-pre-line text-white/60 xl:mx-0">
                     {Education.description}
                   </p>
-                  <ScrollArea className="h-[400px]">
-                    <ul className="grid grid-cols-1 gap-[30px] lg:grid-cols-2">
+                  <ScrollArea className="h-[500px]">
+                    <ul className="grid grid-cols-1 gap-[30px]">
                       {Education.items.map((item, index) => (
                         <li
                           key={index}
-                          className="flex h-[260px] flex-col items-center justify-center gap-1 rounded-xl bg-[#232329] px-10 py-6 lg:items-start"
+                          className="flex flex-col rounded-xl bg-[#232329] p-6 transition-all duration-300 hover:bg-[#2a2a32]"
                         >
-                          <span className="text-accent2">{item.duration}</span>
-                          <h3 className="min-h-[60px] max-w-[260px] text-center text-xl lg:text-left">
-                            {item.degree}
-                          </h3>
-                          <div className="flex items-center gap-3">
-                            <span className="h-[6px] w-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60">{item.institution}</p>
+                          <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
+                            <div className="flex-1">
+                              <span className="text-accent2 font-medium">{item.duration}</span>
+                              {item.status && (
+                                <span className="ml-3 rounded-full bg-accent/20 px-2 py-1 text-xs text-accent">
+                                  {item.status}
+                                </span>
+                              )}
+                              <h3 className="mt-2 text-xl font-semibold">
+                                {item.degree}
+                              </h3>
+                              <div className="mt-1 flex items-center gap-2">
+                                <span className="h-[6px] w-[6px] rounded-full bg-accent"></span>
+                                <p className="text-white/80">{item.institution}</p>
+                              </div>
+                            </div>
                           </div>
+                          
+                          {item.highlights && item.highlights.length > 0 && (
+                            <div className="mt-4">
+                              <h4 className="mb-2 text-sm font-medium text-white/70">Key Focus Areas:</h4>
+                              <div className="flex flex-wrap gap-2">
+                                {item.highlights.map((highlight, idx) => (
+                                  <span 
+                                    key={idx}
+                                    className="rounded-full bg-accent/10 px-3 py-1 text-xs text-accent"
+                                  >
+                                    {highlight}
+                                  </span>
+                                ))}
+                              </div>
+                            </div>
+                          )}
                         </li>
                       ))}
                     </ul>
