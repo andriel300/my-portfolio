@@ -29,7 +29,7 @@ const MultiDirectionSlide = () => {
         transition={{ delay: 2.4, duration: 1 }}
         className="h1 font-playfair relative z-10 mb-6"
       >
-        Olá, eu sou
+        Hi, I'm
       </motion.h1>
       <motion.h1
         initial="right"
