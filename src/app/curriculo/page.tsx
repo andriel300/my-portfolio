@@ -42,6 +42,8 @@ import AnimatedBackground from "@/components/core/animated-background";
 type Skill = {
   icon: FC;
   name: string;
+  category: string;
+  proficiency: number;
 };
 
 type Skills = {
