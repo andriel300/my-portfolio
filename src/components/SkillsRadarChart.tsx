@@ -3,7 +3,13 @@
 import { PolarAngleAxis, PolarGrid, Radar, RadarChart, PolarRadiusAxis, ResponsiveContainer } from "recharts";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-const chartData = [
+interface ChartData {
+  skill: string;
+  level: number;
+  fullMark: number;
+}
+
+const chartData: ChartData[] = [
   { skill: "JavaScript", level: 92, fullMark: 100 },
   { skill: "React", level: 87, fullMark: 100 },
   { skill: "Node.js", level: 78, fullMark: 100 },
@@ -17,8 +23,25 @@ const chartData = [
   { skill: "AWS", level: 61, fullMark: 100 }
 ];
 
+// Define the props interface for the custom tick component
+interface CustomTickProps {
+  payload?: {
+    value: string;
+    coordinate?: number;
+  };
+  x?: number;
+  y?: number;
+  cx?: number;
+  cy?: number;
+  [key: string]: any;
+}
+
 // Custom tick component to properly display skill names
-const CustomPolarAngleAxisTick = ({ payload, x, y, cx, cy, ...rest }) => {
+const CustomPolarAngleAxisTick = ({ payload, x, y }: CustomTickProps) => {
+  if (!payload || x === undefined || y === undefined) {
+    return null;
+  }
+
   return (
     <g transform={`translate(${x},${y})`}>
       <text
