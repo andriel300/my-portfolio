@@ -1,49 +1,49 @@
 export const StatsExperience = [
   {
     num: 3,
-    text: "Anos de experiência",
+    text: "Years of experience",
   },
   {
     num: 15,
-    text: "Projetos completo",
+    text: "Completed projects",
   },
   {
     num: 20,
-    text: "Tecnologias masterizadas",
+    text: "Mastered technologies",
   },
   {
     num: 599,
-    text: "Total Contribuições (Code commits)",
+    text: "Total contributions (Code commits)",
   },
 ];
 
 export const Objetivos = [
   {
     num: "01",
-    title: "Analista de Dados",
+    title: "Full Stack Developer",
     description:
-      "Nesse papel, meu objetivo é aprimorar minha capacidade de interpretar e transformar dados brutos em insights valiosos para a tomada de decisões estratégicas. Estou constantemente buscando melhorar minhas habilidades em análise estatística, visualização de dados e utilização de ferramentas como Python, SQL e Power BI.",
+      "In this role, my goal is to enhance my ability to architect and build complete web applications from frontend to backend. I'm constantly seeking to improve my skills in JavaScript frameworks, server-side technologies, database management, and cloud deployment.",
     href: "",
   },
   {
     num: "02",
-    title: "Analista de Business Intelligence (BI)",
+    title: "Frontend Specialist",
     description:
-      "Nesse papel, estou focado em desenvolver soluções eficientes que permitam a coleta, armazenamento e análise de dados empresariais. Busco aprimorar minhas competências em modelagem de dados, criação de dashboards interativos e implementação de metodologias ágeis para fornecer informações acionáveis.",
+      "In this role, I'm focused on creating responsive, accessible, and performant user interfaces. I aim to master modern frameworks like React and Next.js, state management solutions, and build tools to deliver exceptional user experiences.",
     href: "",
   },
   {
     num: "03",
-    title: "Cientista de Dados",
+    title: "Backend Engineer",
     description:
-      "Nesse papel, meu objetivo é aprofundar meu conhecimento em técnicas avançadas de machine learning e inteligência artificial. Estou empenhado em melhorar minhas habilidades em programação com Python, manipulação de grandes volumes de dados e desenvolvimento de modelos preditivos para resolver problemas complexos.",
+      "In this role, my objective is to deepen my knowledge in server architecture, API design, database optimization, and security practices. I'm committed to improving my skills in Node.js, Python, and cloud infrastructure management.",
     href: "",
   },
   {
     num: "04",
-    title: "Desenvolvedor Web",
+    title: "Web Developer",
     description:
-      "Nesse papel, meu foco é criar aplicações web robustas e escaláveis que proporcionem uma excelente experiência ao usuário. Estou constantemente aprendendo sobre novas tecnologias e frameworks, como React, Next.js e Tailwind CSS, para melhorar minhas habilidades de front-end e back-end.",
+      "In this role, my focus is on creating robust and scalable web applications that provide an excellent user experience. I'm constantly learning about new technologies and frameworks to improve both my front-end and back-end skills.",
     href: "",
   },
 ];
@@ -52,7 +52,7 @@ export const GridItems = [
   {
     id: 1,
     title:
-      "Priorizo ​​a colaboração do stakeholder, promovendo a comunicação aberta",
+      "I prioritize stakeholder collaboration, fostering open communication",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -62,7 +62,7 @@ export const GridItems = [
   },
   {
     id: 2,
-    title: "Data Driven Mindset",
+    title: "Full Stack Mindset",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -72,8 +72,8 @@ export const GridItems = [
   },
   {
     id: 3,
-    title: "Ferramentas:",
-    description: "Eu constantemente tento melhorar",
+    title: "Tech Stack:",
+    description: "I'm constantly trying to improve",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -82,7 +82,7 @@ export const GridItems = [
   },
   {
     id: 4,
-    title: "Entusiasta de tecnologia e apaixonado por dados.",
+    title: "Technology enthusiast passionate about web development.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "md:w-96 w-full",
@@ -93,8 +93,8 @@ export const GridItems = [
 
   {
     id: 5,
-    title: "Atualmente construindo um Dashboard Financeiro",
-    description: "Informações internas",
+    title: "Currently building a Full Stack E-commerce Platform",
+    description: "Internal information",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -103,7 +103,7 @@ export const GridItems = [
   },
   {
     id: 6,
-    title: "Quer iniciar um projeto juntos?",
+    title: "Want to start a project together?",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -116,20 +116,20 @@ export const GridItems = [
 export const Projetos = [
   {
     num: "01",
-    category: "dashboard",
-    title: "projeto 1",
-    description: `People Analytics Setor de RH`,
-    stack: [{ name: "Excel" }, { name: "Power Bi" }, { name: "Figma" }],
+    category: "fullstack",
+    title: "project 1",
+    description: `E-commerce Platform with Admin Dashboard`,
+    stack: [{ name: "React" }, { name: "Node.js" }, { name: "MongoDB" }],
     image: "/assets/work/thumb1.png",
     live: "",
     github: "",
   },
   {
     num: "02",
-    category: "dashboard",
-    title: "projeto 2",
-    description: `Acompanhamento de Vendas para Setor Financeiro`,
-    stack: [{ name: "Excel" }, { name: "Power Bi" }, { name: "Figma" }],
+    category: "frontend",
+    title: "project 2",
+    description: `Responsive Social Media Dashboard`,
+    stack: [{ name: "React" }, { name: "Tailwind CSS" }, { name: "Figma" }],
     image: "/assets/work/thumb3.png",
     live: "",
     github: "",
@@ -137,8 +137,8 @@ export const Projetos = [
   {
     num: "03",
     category: "frontend",
-    title: "projeto 3",
-    description: `Portfolio Pessoal`,
+    title: "project 3",
+    description: `Personal Portfolio`,
     stack: [
       { name: "Next.js" },
       { name: "Javascript" },
@@ -153,40 +153,40 @@ export const Projetos = [
   },
   {
     num: "04",
-    category: "dashboard",
-    title: "projeto 4",
-    description: `Acompanhamento Financeiro para Setor Financeiro`,
-    stack: [{ name: "Excel" }, { name: "Power Bi" }, { name: "Figma" }],
+    category: "backend",
+    title: "project 4",
+    description: `REST API for Task Management System`,
+    stack: [{ name: "Node.js" }, { name: "Express" }, { name: "PostgreSQL" }],
     image: "/assets/work/thumb1.png",
     live: "",
     github: "",
   },
   {
     num: "05",
-    category: "dashboard",
-    title: "projeto 5",
-    description: `Acompanhamento de Vendas para Setor Comercial`,
-    stack: [{ name: "Excel" }, { name: "Power Bi" }, { name: "Figma" }],
+    category: "fullstack",
+    title: "project 5",
+    description: `Real-time Chat Application`,
+    stack: [{ name: "Socket.io" }, { name: "React" }, { name: "Express" }],
     image: "/assets/work/thumb1.png",
     live: "",
     github: "",
   },
   {
     num: "06",
-    category: "dashboard",
-    title: "projeto 6",
-    description: `Acompanhamento de Atendimentos para Setor Atendimento ao Cliente`,
-    stack: [{ name: "Excel" }, { name: "Power Bi" }, { name: "Figma" }],
+    category: "frontend",
+    title: "project 6",
+    description: `Weather App with Geolocation`,
+    stack: [{ name: "React" }, { name: "OpenWeather API" }, { name: "CSS" }],
     image: "/assets/work/thumb2.png",
     live: "",
     github: "",
   },
   {
     num: "07",
-    category: "dashboard",
-    title: "projeto 7",
-    description: `Pesquisa de Satisfação dos Colaboradores para Setor RH`,
-    stack: [{ name: "Excel" }, { name: "Power Bi" }, { name: "Figma" }],
+    category: "backend",
+    title: "project 7",
+    description: `Authentication Service with JWT`,
+    stack: [{ name: "Node.js" }, { name: "MongoDB" }, { name: "JWT" }],
     image: "/assets/work/thumb3.png",
     live: "",
     github: "",
@@ -194,8 +194,8 @@ export const Projetos = [
   {
     num: "08",
     category: "Frontend",
-    title: "projeto 8",
-    description: `Trader Landing page PURO CSS !`,
+    title: "project 8",
+    description: `Trader Landing page PURE CSS!`,
     stack: [{ name: "Css 3" }],
     image: "/assets/work/trader-landingpage.png",
     live: "https://andriel300.github.io/trader-landing-page/",
@@ -203,26 +203,26 @@ export const Projetos = [
   },
 ];
 
-// sobre min data
+// about me data
 export const Sobre = {
-  title: "Sobre min",
-  description: `Sou um profissional apaixonado por usar dados para resolver problemas e tomar decisões inteligentes, sempre transformando desafios em oportunidades. Como um INFP Mediador e Cânceriano, trago empatia e intuição para entender as necessidades dos meus colegas e stakeholders. Valorizo a comunicação clara e a colaboração harmoniosa, dedicando-me à excelência e ao aprimoramento contínuo. Estou sempre em busca de novos desafios e tecnologias, transformando números em insights valiosos para decisões estratégicas e sustentáveis.`,
+  title: "About me",
+  description: `I'm a passionate professional who loves using technology to solve problems and create innovative digital solutions. As an INFP Mediator and Cancerian, I bring empathy and intuition to understanding user needs and stakeholder requirements. I value clear communication and harmonious collaboration, dedicating myself to excellence and continuous improvement. I'm always seeking new challenges and technologies, transforming ideas into functional, beautiful web applications that deliver strategic value.`,
   info: [
     {
-      fieldName: "Nome",
+      fieldName: "Name",
       fieldValue: "Andriel José",
     },
     {
-      fieldName: "Celular",
+      fieldName: "Phone",
       fieldValue: "+55 (18) 99819-0820",
     },
     {
-      fieldName: "Experiência",
-      fieldValue: "3+ Anos",
+      fieldName: "Experience",
+      fieldValue: "3+ Years",
     },
     {
-      fieldName: "Nacionalidade",
-      fieldValue: "Brasileiro",
+      fieldName: "Nationality",
+      fieldValue: "Brazilian",
     },
     {
       fieldName: "Email",
@@ -230,56 +230,71 @@ export const Sobre = {
     },
     {
       fieldName: "Freelance",
-      fieldValue: "Disponível",
+      fieldValue: "Available",
     },
     {
-      fieldName: "Idiomas",
-      fieldValue: "Inglês, Português Brasil",
+      fieldName: "Languages",
+      fieldValue: "English, Brazilian Portuguese",
     },
   ],
 };
 
-// experiencia data
+// experience data
 export const Experiencia = {
   icon: "/assets/resume/badge.svg",
-  title: "Minha Experiência",
-  description: `Com sólida carreira em análise de dados, tenho vasta experiência em identificar e solucionar problemas complexos em parceria com áreas de negócios. Priorizei tarefas utilizando metodologias ágeis como Scrum e criei protótipos eficientes com Figma e Excel. Profissional no mapeamento de dados e processos ETL usando Pentaho, SSIS e SQL, garantindo a integração e transformação precisas dos dados. Especialista em desenvolver dashboards interativos com Power BI, Tableau e Data Studio.
+  title: "My Experience",
+  description: `With a solid career in web development, I have extensive experience in identifying and solving complex technical challenges in collaboration with business areas. I've prioritized tasks using agile methodologies like Scrum and created efficient prototypes with Figma. Professional in both frontend and backend development using technologies like React, Node.js, and various databases. Specialist in developing responsive web applications with modern frameworks and deploying to cloud platforms.
 
-Tenho experiência no desenvolvimento e controle de KPIs e OKRs, assegurando a medição eficaz dos objetivos organizacionais. Realizei homologação de sistemas, documentação detalhada e elaboração de manuais de usabilidade, contribuindo para a conformidade com LGPD e implementação de estratégias de gamificação para engajamento. Com mentalidade analítica e comunicação eficaz, busco excelência e inovação em todos os desafios.`,
+I have experience in API development, database design, and implementing authentication systems. I've performed system testing, detailed documentation, and created user manuals, contributing to project success and implementation of development best practices. With an analytical mindset and effective communication, I pursue excellence and innovation in all challenges.`,
   items: [
     {
-      company: "Data Mundo",
-      position: "Analista de Dados",
-      duration: "2023 - Atual",
+      company: "Tech Solutions Inc.",
+      position: "Full Stack Developer",
+      duration: "2023 - Present",
     },
   ],
 };
 
-// Educação
+// Education
 export const Education = {
   icon: "/assets/resume/cap.svg",
-  title: "Formação",
-  description: `Em constante evolução !!!`,
+  title: "Education & Continuous Learning",
+  description: `I believe in lifelong learning and constantly upgrading my skills to stay at the forefront of technology. My educational journey combines formal education with practical, hands-on learning.`,
   items: [
     {
-      institution: "Centro Universitário Internacional (UNINTER)",
-      degree: "Cursando Bacharelado em Ciências da Computação",
+      institution: "International University Center (UNINTER)",
+      degree: "Bachelor's in Computer Science",
+      status: "In progress (Expected 2028)",
       duration: "2024 - 2028",
+      highlights: ["Algorithms & Data Structures", "Software Engineering", "Database Systems"]
     },
     {
-      institution: "Data Mundo",
-      degree: "Analista de Dados",
-      duration: "2023 - 2024",
+      institution: "Boot.Dev",
+      degree: "Backend Developer Certification",
+      status: "In progress",
+      duration: "2025 - Present",
+      highlights: ["Go Programming", "API Development", "System Design", "Python Programming"]
     },
     {
-      institution: "Zero To Mastery",
-      degree: "Certificado em Desenvolvedor web full stack",
+      institution: "The Odin Project",
+      degree: "Full Stack JavaScript Curriculum",
+      status: "Completed",
+      duration: "2022",
+      highlights: ["React & Node.js", "Testing Practices", "Project-Based Learning"]
+    },
+    {
+      institution: "Zero To Mastery Academy",
+      degree: "Complete Web Developer Certificate",
+      status: "Completed",
       duration: "2021 - 2022",
+      highlights: ["Modern JavaScript", "React & Next.js", "Career Preparation"]
     },
     {
-      institution: "Cursos online",
-      degree: "Cursos de programação, Banco de dados, Sql, Excel e Power Bi.",
-      duration: "2020 - 2024",
-    },
+      institution: "Various Platforms (Udemy, Coursera, YouTube)",
+      degree: "Continuous Skill Development",
+      status: "Ongoing",
+      duration: "2020 - Present",
+      highlights: ["Cloud Technologies (AWS)", "DevOps Practices", "UI/UX Design Principles"]
+    }
   ],
 };
