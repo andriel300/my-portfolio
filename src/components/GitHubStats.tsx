@@ -15,47 +15,76 @@ export default function GitHubStats() {
 
   useEffect(() => {
     const loadStats = async () => {
-    try {
-      const gitHubStats = await fetchGitHubStats("andriel300");
+      try {
+        const gitHubStats = await fetchGitHubStats("andriel300");
 
-      setStats([
-        { num: gitHubStats.yearsOfExperience, text: "Years of experience" },
-        { num: gitHubStats.completedProjects, text: "Completed projects" },
-        { num: gitHubStats.masteredTechnologies, text: "Mastered technologies" },
-        { num: gitHubStats.totalContributions, text: "Total contributions P/Years (Code commits)" },
-      ]);
-    } catch (error) {
-      console.error("Error fetching GitHub stats:", error);
-      // Fallback  to default stats
-      setStats([
-        { num: 3, text: "Years of experience" },
-        { num: 15, text: "Completed projects" },
-        { num: 20, text: "Mastered technologies" },
-        { num: 599, text: "Total contributions (Code commits)" }
-      ]);
-    } finally {
-      setLoading(false);
-    }
-  };
+        setStats([
+          { num: gitHubStats.yearsOfExperience, text: "Years of experience" },
+          { num: gitHubStats.completedProjects, text: "Completed projects" },
+          { num: gitHubStats.masteredTechnologies, text: "Mastered technologies" },
+          { num: gitHubStats.totalContributions, text: "Total contributions (Code commits)" },
+        ]);
+      } catch (error) {
+        console.error("Error fetching GitHub stats:", error);
+        // Fallback to default stats
+        setStats([
+          { num: 3, text: "Years of experience" },
+          { num: 15, text: "Completed projects" },
+          { num: 20, text: "Mastered technologies" },
+          { num: 599, text: "Total contributions (Code commits)" }
+        ]);
+      } finally {
+        setLoading(false);
+      }
+    };
 
-  loadStats();
-}, []);
+    loadStats();
+  }, []);
 
-if (loading) {
-    return <div>Loading stats...</div>;
-}
-
-return (
-    <div className="grid grid-cols-2 gap-8 py-12 xl:py-0 xl:grid-cols-4">
-      {stats.map((item, index) => (
-        <div key={index} className="flex flex-col items-center justify-center">
-          <div className="text-5xl text-white mb-2">
-            <CountUp end={item.num} duration={5} />
-            +
+  if (loading) {
+    return (
+      <section className="pb-12 pt-4 xl:pb-0 xl:pt-0">
+        <div className="container mx-auto">
+          <div className="mx-auto flex max-w-[80vw] flex-wrap gap-6 xl:max-w-none">
+            {[1, 2, 3, 4].map((item) => (
+              <div
+                className="flex flex-1 items-center justify-center gap-4 xl:justify-start"
+                key={item}
+              >
+                <div className="text-4xl font-extrabold xl:text-6xl h-12 bg-gray-700 rounded animate-pulse w-16"></div>
+                <div className="h-6 bg-gray-700 rounded animate-pulse w-24"></div>
+              </div>
+            ))}
           </div>
-          <div className="text-lg text-white/60">{item.text}</div>
         </div>
-      ))}
-    </div>
+      </section>
+    );
+  }
+
+  return (
+    <section className="pb-12 pt-4 xl:pb-0 xl:pt-0">
+      <div className="container mx-auto">
+        <div className="mx-auto flex max-w-[80vw] flex-wrap gap-6 xl:max-w-none">
+          {stats.map((item, index) => (
+            <div
+              className="flex flex-1 items-center justify-center gap-4 xl:justify-start"
+              key={index}
+            >
+              <CountUp
+                end={item.num}
+                duration={5}
+                delay={2}
+                className="text-4xl font-extrabold xl:text-6xl"
+              />
+              <p
+                className={`${item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"} leading-snug text-white/80`}
+              >
+                {item.text}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
