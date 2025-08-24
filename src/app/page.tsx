@@ -6,8 +6,9 @@ import FramerWrapper from "@/components/FramerWrapper";
 import MultiDirectionSlide from "@/components/MultiDirection";
 import Photo from "@/components/Photo";
 import RedeSocial from "@/components/RedeSocial";
-import Stats from "@/components/Stats";
+// import Stats from "@/components/Stats";
 import { TypeAnimation } from "react-type-animation";
+import GitHubStats from "@/components/GitHubStats";
 
 const Home = () => {
   return (
@@ -58,7 +59,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Stats />
+      {/* <Stats /> */}
+      <GitHubStats />
     </section>
   );
 };
