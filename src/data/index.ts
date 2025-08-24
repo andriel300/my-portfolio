@@ -1,21 +1,4 @@
-export const StatsExperience = [
-  {
-    num: 3,
-    text: "Years of experience",
-  },
-  {
-    num: 15,
-    text: "Completed projects",
-  },
-  {
-    num: 20,
-    text: "Mastered technologies",
-  },
-  {
-    num: 599,
-    text: "Total contributions (Code commits)",
-  },
-];
+
 
 export const Objetivos = [
   {
