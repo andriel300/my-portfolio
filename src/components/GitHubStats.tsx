@@ -22,7 +22,7 @@ export default function GitHubStats() {
           { num: gitHubStats.yearsOfExperience, text: "Years of experience" },
           { num: gitHubStats.completedProjects, text: "Completed projects" },
           { num: gitHubStats.masteredTechnologies, text: "Mastered technologies" },
-          { num: gitHubStats.totalContributions, text: "Total contributions (Code commits)" },
+          { num: gitHubStats.totalContributions, text: "Total contributions This Year (Code commits)" },
         ]);
       } catch (error) {
         console.error("Error fetching GitHub stats:", error);
@@ -76,6 +76,7 @@ export default function GitHubStats() {
                 delay={2}
                 className="text-4xl font-extrabold xl:text-6xl"
               />
+              
               <p
                 className={`${item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"} leading-snug text-white/80`}
               >
